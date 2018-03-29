@@ -1,0 +1,3 @@
+ PYTHONPATH=. ./bin/ryu-manager --ofp-listen-host 127.0.0.1 --ofp-tcp-listen-port 6634 ryu/app/simple_switch_13.py
+
+PYTHONPATH=. ./bin/ryu-manager --ofp-listen-host 127.0.0.1 --ofp-tcp-listen-port 6639 ryu/app/simple_switch_13.py

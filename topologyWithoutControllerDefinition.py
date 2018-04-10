@@ -4,6 +4,7 @@ from mininet.net import Mininet
 from mininet.node import Controller, OVSKernelSwitch, RemoteController
 from mininet.cli import CLI
 from mininet.log import setLogLevel, info
+import os
 
 def myTopo():
 
@@ -22,6 +23,7 @@ def myTopo():
     h8 = net.addHost( 'h8', ip='10.0.0.8' )
     h9 = net.addHost( 'h9', ip='10.0.0.9' )
     h10 = net.addHost( 'h10', ip='10.0.0.10' )
+    #h11 = net.addHost( 'h11', ip='10.0.0.11' )
 
     s1 = net.addSwitch( 's1' )
     s2 = net.addSwitch( 's2' )
@@ -88,6 +90,9 @@ def myTopo():
 
     net.start()
     net.staticArp()
+
+    os.system('sudo ./connectOneController.sh')
+
     CLI( net )
     net.stop()
 

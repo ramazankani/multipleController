@@ -9,8 +9,8 @@ def myTopo():
 
     net = Mininet(controller=RemoteController, switch=OVSKernelSwitch)
 
-    c1 = net.addController('c1', controller=RemoteController, ip="127.0.0.1", port=6633)
-    c2 = net.addController('c2', controller=RemoteController, ip="127.0.0.1", port=6639)
+    #c1 = net.addController('c1', controller=RemoteController, ip="127.0.0.1", port=6633)
+    #c2 = net.addController('c2', controller=RemoteController, ip="127.0.0.1", port=6639)
 
     h1 = net.addHost( 'h1', ip='10.0.0.1' )
     h2 = net.addHost( 'h2', ip='10.0.0.2' )
@@ -70,17 +70,17 @@ def myTopo():
     #c1.start()
     #c2.start()
     
-    s1.start([c1])
-    s2.start([c2])
-    s3.start([c1])
-    s4.start([c1])
-    s5.start([c1])
-    s6.start([c1])
-    s7.start([c2])
-    s8.start([c2])
-    s9.start([c2])
-    s10.start([c2])
-
+    #s1.start()
+    #s2.start()
+    #s3.start()
+    #s4.start()
+    #s5.start()
+    #s6.start()
+    #s7.start()
+    #s8.start()
+    #s9.start()
+    #s10.start()
+    
     h3.cmd('python -m SimpleHTTPServer 80 &')
     h5.cmd('python -m SimpleHTTPServer 80 &')
     h7.cmd('python -m SimpleHTTPServer 80 &')

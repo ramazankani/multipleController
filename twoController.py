@@ -86,8 +86,8 @@ def myTopo():
     h7.cmd('python -m SimpleHTTPServer 80 &')
     h9.cmd('python -m SimpleHTTPServer 80 &')
 
-    net.start()
-    net.staticArp()
+    #net.start()
+    #net.staticArp()
     CLI( net )
     net.stop()
 

@@ -23,7 +23,6 @@ def myTopo():
     h8 = net.addHost( 'h8', ip='10.0.0.8' )
     h9 = net.addHost( 'h9', ip='10.0.0.9' )
     h10 = net.addHost( 'h10', ip='10.0.0.10' )
-    #h11 = net.addHost( 'h11', ip='10.0.0.11' )
 
     s1 = net.addSwitch( 's1' )
     s2 = net.addSwitch( 's2' )

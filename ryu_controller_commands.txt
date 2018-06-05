@@ -2,3 +2,31 @@
 PYTHONPATH=. ./bin/ryu-manager --ofp-listen-host 127.0.0.1 --ofp-tcp-listen-port 6634 ryu/app/simple_switch_13.py
 
 PYTHONPATH=. ./bin/ryu-manager --ofp-listen-host 127.0.0.1 --ofp-tcp-listen-port 6639 ryu/app/simple_switch_13.py
+
+
+55.18
+stp stp -- stp  
+1527732399.96
+1527732344.78
+
+
+34.54
+stp simple(break) -- stp
+1527732596.85
+1527732631.39
+
+15.96
+stp-enable true
+stp(break) simple -- simple
+1527733059.25
+1527733043.29
+
+3.67
+simple simple -- simple
+
+
+32.28
+45 portunda ayrı bir controller
+stp stp -- stp
+1527733487.94
+1527733520.22

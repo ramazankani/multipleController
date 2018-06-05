@@ -80,7 +80,7 @@ def myTopo():
     
 
     net.build()
-    net.start()
+    #net.start()
     h1.cmd('python -m SimpleHTTPServer 80 &')
     h3.cmd('python -m SimpleHTTPServer 80 &')
     h7.cmd('python -m SimpleHTTPServer 80 &')

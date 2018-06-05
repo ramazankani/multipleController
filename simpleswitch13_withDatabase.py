@@ -9,6 +9,7 @@ from ryu.lib.packet import ether_types
 import os
 import os.path
 import sqlite3
+import time
 
 
 class SimpleSwitch13(app_manager.RyuApp):
@@ -52,6 +53,9 @@ class SimpleSwitch13(app_manager.RyuApp):
 
     @set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
     def _packet_in_handler(self, ev):
+        print("*************************************")
+        print(time.time())
+        print("*************************************")
         # If you hit this you might want to increase
         # the "miss_send_length" of your switch
         if ev.msg.msg_len < ev.msg.total_len:

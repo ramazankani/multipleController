@@ -38,13 +38,10 @@ def myTopo():
 
     s1.linkTo( s2 )
 
-    s1.linkTo( s3 )
-    s1.linkTo( s4 )
-    s3.linkTo( s4 )
-    s3.linkTo( s5 )
-    s4.linkTo( s5 )
-    s4.linkTo( s6 )
-    s5.linkTo( s6 )
+    net.addLink( s1 , s3 )
+    net.addLink( s3 , s4 )
+    net.addLink( s3 , s5 )
+    net.addLink( s5 , s6 )
 
     s2.linkTo( s7 )
     s2.linkTo( s8 )    
